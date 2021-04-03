@@ -1,0 +1,12 @@
+
+--
+ INSERT INTO dogs(id, name) values(1, 'Lola');
+ INSERT INTO dogs(id, name) values(2, 'Bella');
+ INSERT INTO dogs(id, name) values(3, 'Malhado');
+ INSERT INTO dogs(id, name) values(4, 'Denver');
+ INSERT INTO dogs(id, name) values(5, 'Aurora');
+ INSERT INTO cats(id, name) values(1, 'Lola');
+ INSERT INTO cats(id, name) values(2, 'Kitty');
+ INSERT INTO cats(id, name) values(3, 'Noelle');
+ INSERT INTO cats(id, name) values(4, 'Malhado');
+

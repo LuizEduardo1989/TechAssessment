@@ -1,0 +1,23 @@
+-- Populate the created DB tables with data records:
+-- Insert records into the [students] db table
+INSERT INTO public.students ("Name", marks) 
+VALUES ('Juia',88),
+       ('Samantha',68),
+       ('Maria',99),
+       ('Scarlet',78),
+       ('Ashley',63),
+       ('Jane',81);
+
+-- Insert records into the [grades] db table
+INSERT INTO public.grades (grade,min_mark,max_mark) 
+VALUES (1,0,9),
+       (2,10,19),
+       (3,20,29),
+       (4,30,39),
+       (5,40,49),
+       (6,50,59),
+       (7,60,69),
+       (8,70,79),
+       (9,80,89),
+       (10,90,100);
+

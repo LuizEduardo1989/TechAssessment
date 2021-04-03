@@ -1,0 +1,16 @@
+
+-- Expected output (in any order):
+-- name
+-- -----
+-- Bella
+-- Kitty
+-- Lola
+-- Noelle
+-- Malhado
+-- Denver
+-- Aurora
+
+
+select name from dogs
+union
+select name from cats;

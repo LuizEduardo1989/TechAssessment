@@ -1,0 +1,18 @@
+-- PostgreSQL
+-- Create the necessary tables into a test database:
+
+-- Create the [students] db table
+CREATE TABLE public.students (
+       id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+       "Name" varchar NOT NULL,
+       marks int4 NOT NULL,
+CONSTRAINT students_pk PRIMARY KEY (id)
+);
+
+-- Create the [grades] db table
+CREATE TABLE public.grades (
+       grade    int4 NOT NULL,
+       min_mark int4 NOT NULL,
+       max_mark int4 NOT NULL,
+CONSTRAINT grades_pk PRIMARY KEY (grade)
+);

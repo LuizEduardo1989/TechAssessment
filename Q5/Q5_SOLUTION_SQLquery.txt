@@ -1,0 +1,17 @@
+-- Write the SQL query to generate the requested report:
+SELECT CASE 
+       -- If the grade is lower than 8, use "NULL" as Name
+       WHEN t2.grade < 8 THEN 'NULL'
+       -- Otherwise show the actual name
+       ELSE t1."Name"
+       END AS Name,
+       t2.grade,
+       t1.marks 
+FROM students t1
+
+-- Join the grades DB table by binding the marks column of the students table with
+-- the min_mark and max_mark columns of the grades DB table
+INNER JOIN grades t2 ON (t1.marks >= t2.min_mark AND t1.marks <= t2.max_mark)
+-- Order by grade in Descending order, then by name in Ascending order and
+-- for those students (NULLs) with the same grade (1-7) order by grade in Ascending order
+ORDER BY t2.grade DESC, Name, t1.marks ASC
